@@ -9,15 +9,13 @@ print("Fibonacci sequence (Recursive):")
 for i in range(num + 1):
     print(fibonacci_recursive(i), end=" ")
 print("\n")
-# Iterative Fibonacci Function
-def fib_iterative(n):
-    if n <= 1:
-        return n
+def fibonacci_iterative(n):
     a, b = 0, 1
-    for i in range(2, n + 1):
+    print("Fibonacci sequence (Iterative):")
+    print(a, end=" ")
+    for _ in range(n):
+        print(b, end=" ")
         a, b = b, a + b
-    return b
-
-# Driver code
-n = int(input("Enter a number: "))
-print("Fibonacci sequence (Iterative) =", fib_iterative(n))
+    print("\n")
+num = int(input("Enter number: "))
+fibonacci_iterative(num)
