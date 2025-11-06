@@ -9,6 +9,8 @@ print("Fibonacci sequence (Recursive):")
 for i in range(num + 1):
     print(fibonacci_recursive(i), end=" ")
 print("\n")
+print("Recursive Time Complexity: O(2^n)")
+print("Recursive Space Complexity: O(n)\n")
 def fibonacci_iterative(n):
     a, b = 0, 1
     print("Fibonacci sequence (Iterative):")
@@ -19,3 +21,5 @@ def fibonacci_iterative(n):
     print("\n")
 num = int(input("Enter number: "))
 fibonacci_iterative(num)
+print("Non-Recursive Time Complexity: O(n)")
+print("Non-Recursive Space Complexity: O(1)")
